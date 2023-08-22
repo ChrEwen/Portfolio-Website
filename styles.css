@@ -18,9 +18,14 @@ body {
 }
 
 header {
-  background-color: var(--lightdark);
+  background-color: var(--dark);
   position: sticky;
   top: 0;
+  transition: 0.3s;
+}
+
+header.active {
+  background-color: var(--lightdark);
 }
 
 li {
@@ -50,13 +55,14 @@ a {
   display: flex;
   flex-direction: column;
   width: 100%;
-  background-color: var(--lightdark);
+  background-color: var(--dark);
   text-align: center;
   transition: 0.3s;
 }
 
 .nav-menu.active {
   left: 0;
+  background-color: var(--lightdark);
 }
 
 .nav-link {
@@ -151,12 +157,13 @@ img {
 .cards {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .card {
   background-color: var(--green);
-  width: 450px;
-  margin: 10px auto;
+  max-width: 450px;
+  margin: 10px 20px;
   border-radius: 10px;
   padding: 10px;
   box-shadow: var(--green) 0px 2px 8px 0px;
@@ -200,40 +207,6 @@ img {
 }
 
 /* Kontakt */
-button {
-  width: 100%;
-  height: 50px;
-  margin-top: 10px;
-  border-radius: 5px;
-  border: none;
-  background-color: var(--green);
-  font-size: 25px;
-  color: var(--white);
-  cursor: pointer;
-}
-
-button:hover {
-  background-color: var(--lightdark);
-  border: 1px solid var(--green);
-}
-
-form {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-}
-
-input {
-  height: 40px;
-  margin-bottom: 10px;
-}
-
-input,
-textarea {
-  border-radius: 5px;
-  border: 2px solid var(--green);
-  padding: 10px;
-}
 
 .kontakt > p {
   text-align: justify;
@@ -310,6 +283,13 @@ footer {
   .hero-text > p {
     font-size: 60px;
     padding-top: 30px;
+    padding-left: 10px;
+  }
+
+  /* Ausbildung */
+
+  .card {
+    margin: 10px auto;
   }
 
   /* Informationen */
