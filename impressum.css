@@ -1,0 +1,107 @@
+:root {
+  --white: #fff;
+  --dark: #1e1e1e;
+  --lightdark: #37353e;
+  --green: #1abc9c;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: var(--dark);
+  color: var(--white);
+}
+
+header {
+  background-color: var(--lightdark);
+  position: sticky;
+  top: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: var(--white);
+  text-decoration: none;
+}
+
+/* Navbar */
+
+.navbar {
+  min-height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar > a:hover {
+  text-decoration: underline solid var(--green) 2px;
+  text-underline-offset: 4px;
+}
+
+/* Main */
+
+main {
+  padding: 20px;
+}
+
+main > h1 {
+  margin-bottom: 10px;
+}
+
+main > div {
+  margin-top: 10px;
+}
+
+/* Footer */
+
+footer {
+  position: absolute;
+  bottom: 0;
+  height: 120px;
+  width: 100%;
+  padding: 20px;
+  background-color: var(--lightdark);
+}
+
+.footerLinks {
+  display: flex;
+  margin-bottom: 20px;
+  gap: 50px;
+}
+
+.footerLinks > ul > a:hover {
+  text-decoration: underline solid var(--green) 2px;
+  text-underline-offset: 4px;
+}
+
+/* Media Query */
+
+@media (min-width: 821px) {
+
+  /* Main */
+
+  main {
+    max-width: 60%;
+    margin: auto;
+    padding: 20px 0;
+  }
+
+  /* Footer */
+
+  footer {
+    padding: 20px 0;
+  }
+
+  .footerInhalt {
+    max-width: 60%;
+    margin: auto;
+  }
+}

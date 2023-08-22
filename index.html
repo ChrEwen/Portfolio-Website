@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Christoph Ewen - Frontend Entwickler</title>
+    <meta
+      name="description"
+      content="Hi, ich bin Christoph, Frontend Entwickler. Hier finden Sie Informationen über mich. Nehmen Sie gerne Kontakt zu mir auf."
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="icons/css/fontawesome.css" />
+    <link rel="stylesheet" href="icons/css/brands.css" />
+    <link rel="stylesheet" href="icons/css/solid.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a href="#about" class="nav-link">ÜBER MICH</a>
+          </li>
+          <li class="nav-item">
+            <a href="#ausbildung" class="nav-link">AUSBILDUNG</a>
+          </li>
+          <li class="nav-item">
+            <a href="#skills" class="nav-link">SKILLS</a>
+          </li>
+          <li class="nav-item">
+            <a href="#kontakt" class="nav-link">KONTAKT</a>
+          </li>
+        </ul>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="hero">
+        <div class="hero-img">
+          <picture>
+            <source
+              media="(min-width: 821px)"
+              srcset="images/profilbild_large.webp"
+            />
+            <img src="images/profilbild_small.webp" alt="Profilbild" />
+          </picture>
+        </div>
+        <div class="hero-text">
+          <h1>Hi</h1>
+          <p>Ich bin Christoph</p>
+          <p>Frontend Entwickler</p>
+        </div>
+      </section>
+      <section class="about infos" id="about">
+        <h1 class="überschirft">Über mich</h1>
+        <p>
+          Ich würde mich als verantwortungsbewussten und hilfsbereiten Menschen
+          bezeichnen. Daher arbeite ich gerne in einem starken Team wo jeder den
+          Anderen unterstützt.
+        </p>
+        <p>
+          Jedes Projekt bringt neue Herausforderungen mit sich, weshalb ich die
+          Webentwicklung so spannend finde. Man lernt nie aus und kann bei jedem
+          Projekt seine Erfahrung mit einbringen und erweitern.
+        </p>
+        <p>
+          Privat interessiere ich mich für American Football und Fußball.
+          Letzteres habe ich auch über viele Jahre aktiv gespielt. Neben
+          Aktivitäten mit Freunden genieße ich aber genauso meine Ruhe und
+          verbringe meine Freizeit mit Gaming oder treibe Sport wie
+          beispielsweise Freeletics.
+        </p>
+      </section>
+      <section class="ausbildung infos" id="ausbildung">
+        <h1 class="überschirft">Ausbildung</h1>
+        <div class="cards">
+          <div class="card">
+            <h2>Bachelor of Science Medieninformatik</h2>
+            <p>Hochschule Düsseldorf</p>
+            <p>Abschlussnote: 2,2</p>
+            <p>Thesis: Sustainable Webdesign</p>
+          </div>
+          <div class="card">
+            <h2>Informationstechnischer Assisstent, Fachhochschulreife</h2>
+            <p>Berufskolleg Hilden</p>
+            <p>Abschlussnote: 3,1</p>
+          </div>
+        </div>
+      </section>
+      <section class="skills infos" id="skills">
+        <h1 class="überschirft">Skills</h1>
+        <div class="container">
+          <div class="skill">
+            <h2>HTML</h2>
+            <div class="rating">
+              <span class="dot filled"></span>
+              <span class="dot filled"></span>
+              <span class="dot filled"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+            </div>
+          </div>
+          <div class="skill">
+            <h2>CSS</h2>
+            <div class="rating">
+              <span class="dot filled"></span>
+              <span class="dot filled"></span>
+              <span class="dot filled"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+            </div>
+          </div>
+          <div class="skill">
+            <h2>JavaScript</h2>
+            <div class="rating">
+              <span class="dot filled"></span>
+              <span class="dot filled"></span>
+              <span class="dot filled"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+            </div>
+          </div>
+          <div class="skill">
+            <h2>React</h2>
+            <div class="rating">
+              <span class="dot filled"></span>
+              <span class="dot filled"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+            </div>
+          </div>
+          <div class="skill">
+            <h2>Next.js</h2>
+            <div class="rating">
+              <span class="dot filled"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+            </div>
+          </div>
+          <div class="skill">
+            <h2>Bootstrap</h2>
+            <div class="rating">
+              <span class="dot filled"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="kontakt infos" id="kontakt">
+        <h1 class="überschirft">Kontakt</h1>
+        <p>
+          Wenn ich ihr Interesse geweckt habe senden Sie mir gerne eine E-Mail
+          an
+          <span class="email">kontakt@christophewen.de</span>
+        </p>
+      </section>
+    </main>
+    <footer>
+      <div class="footerInhalt">
+        <div class="footerLinks">
+          <ul>
+            <a href="impressum.html"><li>Impressum</li></a>
+            <a href="datenschutz.html"><li>Datenschutz</li></a>
+          </ul>
+          <div>
+            <a href="mailto:kontakt@christophewen.de"
+              ><i class="fa-regular fa-envelope"></i
+            ></a>
+            <a href="https://linkedin.de" target="_blank"
+              ><i class="fa-brands fa-linkedin"></i
+            ></a>
+          </div>
+        </div>
+        <p>&copy 2023 Christoph Ewen</p>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
