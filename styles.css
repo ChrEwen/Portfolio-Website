@@ -150,6 +150,7 @@ img {
 
 .about > p {
   margin: 10px 20px 20px;
+  line-height: 1.5;
 }
 
 /* Ausbildung */
@@ -210,6 +211,7 @@ img {
 
 .kontakt > p {
   text-align: left;
+  line-height: 1.5;
   margin: 0 20px;
 }
 
