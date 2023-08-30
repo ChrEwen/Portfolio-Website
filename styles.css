@@ -189,6 +189,10 @@ img {
   text-align: center;
 }
 
+.skill > h3 {
+  font-size: 18px;
+}
+
 .rating {
   display: flex;
   justify-content: center;
